@@ -3,3 +3,5 @@ const Spotify = () => {
     <div>Spotify</div>
   )
 }
+
+export {Spotify};

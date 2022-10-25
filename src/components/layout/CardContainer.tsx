@@ -6,6 +6,7 @@ const StyledCardContainer = styled("main", {
     justifyContent: "space-around",
 })
 
+// @ts-ignore
 const CardContainer = ({children}) => {
   return (
     <StyledCardContainer>

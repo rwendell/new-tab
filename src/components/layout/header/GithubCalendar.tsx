@@ -9,18 +9,22 @@ type props = {
   global_stats?: boolean;
   cache?: number;
 };
-
+// @ts-ignore
 const GithubCalendar: React.FC<props> = (
   userName,
   responsive = false,
   tooltips = false,
+  // @ts-ignore
   summary_text,
+  // @ts-ignore
   proxy,
   global_stats = true,
+  // @ts-ignore
   cache
 ) => {
   const ref = useRef<HTMLDivElement | null>(null);
   useEffect(() => {
+    // @ts-ignore
     githubCalendarAPI(ref.current, userName, {
       cache,
       global_stats,
